@@ -22,7 +22,7 @@ $host = parse_url(trim($extra['api_url']),  PHP_URL_HOST);
 
 $apiUrl = "https://{$host}/api/sfspay/checkout";
 
-$final_amount = $amount * $extra['exchange_rate'];c:\Users\abusa\Downloads\payment_methods.sql
+$final_amount = $amount * $extra['exchange_rate'];
 $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 // header("Location: $apiUrl");
 
